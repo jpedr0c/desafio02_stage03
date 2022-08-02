@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-text: hsla(274, 84%, 12%, 1);
+    --color-bg-header: hsla(218, 17%, 62%, 1);
+    --color-bg-title: hsl(275, 18%, 79%);
+    --color-bg-title-card: hsl(312, 91%, 96%);
+    --color-bg-body: hsl(233, 100%, 97%);
+    --color-title-card: hsla(232, 17%, 35%, 1);
+    
+    --ff-title: 'Staatliches', cursive;
+    --ff-text: 'Palanquin', sans-serif;
+
+    --fs-title: 4rem;
+    --fs-text: 2rem;
+}
+
+body{
+    background-color: var(--color-bg-body);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    background-color: var(--color-bg-header);
+    text-align: center;
+    padding: 3.2rem 0;
+}
+
+header img{
+    width: 13.7rem;
+    margin-bottom: 4rem;
+}
+
+header h1{
+    background-color: var(--color-bg-title);
+    font-family: var(--ff-title);
+    font-size: var(--fs-title);
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+main{
+    max-width: 32rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+main p{
+    margin: 1.4rem 0 6.3rem 0;
+    text-align: center;
+    font-family: var(--ff-text);
+    font-size: var(--fs-text);
+    line-height: 2.2rem;
+    color: var(--color-text);
+}
+
+main .cards{
+    display: grid;
+    gap: 3.2rem;
+}
+
+main .card{
+    position: relative;
+}
+
+main .card img{
+    border-radius: 2rem;
+    animation: downtop 700ms;
+
+}
+
+main .card h2{
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    background-color: var(--color-bg-title-card);
+    border-radius: 2rem;
+    padding: 0 2.4rem;
+    font-family: var(--ff-title);
+    font-size: var(--fs-text);
+    font-weight: 400;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: var(--color-title-card);
+    animation: topdown 700ms 400ms backwards;
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    10%{
+        opacity: 0.1;
+    }
+
+    25%{
+        opacity: 0.2;
+    }
+
+    30%{
+        opacity: 0.3;
+    }
+
+    40%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    60%{
+        opacity: 0.6;
+    }
+
+    70%{
+        opacity: 0.7;
+    }
+
+    80%{
+        opacity: 0.8;
+    }
+
+    90%{
+        opacity: 0.9;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    10%{
+        opacity: 0.1;
+    }
+
+    25%{
+        opacity: 0.2;
+    }
+
+    30%{
+        opacity: 0.3;
+    }
+
+    40%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    60%{
+        opacity: 0.6;
+    }
+
+    70%{
+        opacity: 0.7;
+    }
+
+    80%{
+        opacity: 0.8;
+    }
+
+    90%{
+        opacity: 0.9;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
